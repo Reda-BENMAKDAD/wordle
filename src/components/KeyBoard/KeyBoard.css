@@ -1,0 +1,10 @@
+.keyboard {
+    display: grid;
+    margin: 50px;
+    margin-bottom: 30px;
+    margin-top: auto;
+    grid-template-columns: repeat(10, 3.5vw);
+    grid-template-rows: repeat(3, 3.5vw);
+    grid-gap: 0.75vw 0.75vw;
+  }
+  

@@ -1,0 +1,21 @@
+.letter {
+    position: relative;
+    width: 3.5rem;
+    height: 4.25rem;
+    box-sizing: border-box;
+    margin-right: 0.25vw;
+    flex-shrink: 0;
+    border: 0.25vw solid #ffcc58;
+    border-radius: 1rem;
+    background: rgba(233, 232, 232, 0.35);
+    color: #000;
+    font-family: Itim;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,0 +1,22 @@
+.key {
+    background: #d9d9d9;
+    color: #000;
+    font-family: Itim;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.colspan-2 {
+    font-size: 3.4vw;
+    grid-column: span 2;
+}
+
+.key:active {
+    background-color: rgb(194, 193, 193);
+    transition: background-color 0.1s ease-in-out;
+}

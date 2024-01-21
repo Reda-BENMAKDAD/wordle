@@ -1,5 +1,5 @@
 .navbar {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -12,9 +12,8 @@
 .logo {
     color: white;
     margin-left: 3.5rem;
-    font-size: 3.5rem;
+    font-size: 3.5vw;
     -webkit-font-smoothing: antialiased;
-    font-family: itim;
     text-shadow:
                 -1.25px  -1.25px   0 #FFCC58,
                  0       -1.25px   0 #FFCC58,
