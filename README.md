@@ -26,7 +26,7 @@ you will understand more by running the project and playing the game.
 - Redux
 - Redux-toolkit
 - Axios
-- WordsAPI
+- Free Dictionary API
 - Node.js
 - Pure css
 
