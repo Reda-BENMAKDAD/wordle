@@ -1,7 +1,9 @@
 .try {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 0.7vw;
     margin-bottom: 0.75vh;
+    width:100%;
 
 }
