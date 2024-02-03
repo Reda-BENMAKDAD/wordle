@@ -19,6 +19,8 @@ function Home() {
       console.log(err.message);
     });
   }, []);
+  console.log(tries, randomWord)
+  
 
   const handleKeyClick = (key) => {
     let temp_tries; // using this varibales to introduce changes without directly mutating the state
@@ -52,6 +54,11 @@ function Home() {
       temp_tries = [...tries];
       temp_tries[currentTry] += key;
       setTries(temp_tries);
+    } else {
+      setMessage("You can only enter 5 letters");
+      setTimeout(() => {
+        setMessage(null);
+      }, 1500);
     }
   };
 
