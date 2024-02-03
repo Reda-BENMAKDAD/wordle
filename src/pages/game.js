@@ -34,6 +34,10 @@ function Home() {
               temp_tries = [...tries, ""];
               setTries(temp_tries);
               setCurrentTry(currentTry + 1);
+              setMessage("Wrong word! Try again");
+              setTimeout(() => {
+                setMessage(null);
+              }, 1500);
             })
             .catch((err) => {
               console.log(err.message);
