@@ -11,11 +11,12 @@ function Home() {
   const [tries, setTries] = useState([""]);
   const [message, setMessage] = useState(null);
   const [randomWord, setRandomWord] = useState(null);
+
   useEffect(() => {
     axios.get("https://random-word-api.herokuapp.com/word?length=5").then(res => {
       setRandomWord(res.data[0]);
     }).catch((err) => {
-      console.log(err);
+      console.log(err.message);
     });
   }, []);
 
@@ -35,7 +36,7 @@ function Home() {
               setCurrentTry(currentTry + 1);
             })
             .catch((err) => {
-              console.log(err);
+              console.log(err.message);
               setMessage("word doesn't exist"); // TODO: add animation and styles to modal
               setTimeout(() => {
                 setMessage(null);
