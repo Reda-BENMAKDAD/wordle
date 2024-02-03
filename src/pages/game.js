@@ -11,11 +11,12 @@ function Home() {
   const [tries, setTries] = useState([""]);
   const [message, setMessage] = useState(null);
   const [randomWord, setRandomWord] = useState(null);
+
   useEffect(() => {
     axios.get("https://random-word-api.herokuapp.com/word?length=5").then(res => {
       setRandomWord(res.data[0]);
     }).catch((err) => {
-      console.log(err);
+      console.log(err.message);
     });
   }, []);
 
@@ -33,9 +34,13 @@ function Home() {
               temp_tries = [...tries, ""];
               setTries(temp_tries);
               setCurrentTry(currentTry + 1);
+              setMessage("Wrong word! Try again");
+              setTimeout(() => {
+                setMessage(null);
+              }, 1500);
             })
             .catch((err) => {
-              console.log(err);
+              console.log(err.message);
               setMessage("word doesn't exist"); // TODO: add animation and styles to modal
               setTimeout(() => {
                 setMessage(null);
@@ -51,6 +56,11 @@ function Home() {
       temp_tries = [...tries];
       temp_tries[currentTry] += key;
       setTries(temp_tries);
+    } else {
+      setMessage("You can only enter 5 letters");
+      setTimeout(() => {
+        setMessage(null);
+      }, 1500);
     }
   };
 
