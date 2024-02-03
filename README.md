@@ -28,6 +28,8 @@ first of all i designed this "fun game" looking website on figma, as i wanted to
 
 I then implemted this design in react, i created various components for the different parts of the game, that i styled accordingly to the figma design in pure css. i used axios to fetch the word definition from the free dictionary api.
 
+I then coded the game logic word typing, checking if word exists, tries...etc. using react state and props and basic javascript. 
+
 
 ## Technologies used
 - React
