@@ -19,8 +19,6 @@ function Home() {
       console.log(err.message);
     });
   }, []);
-  console.log(tries, randomWord)
-  
 
   const handleKeyClick = (key) => {
     let temp_tries; // using this varibales to introduce changes without directly mutating the state
