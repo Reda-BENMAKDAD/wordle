@@ -1,7 +1,7 @@
 import React from "react";
 import KeyBoardKey from "../KeyBoardKey/KeyBoardKey";
 import './KeyBoard.css'
-const KeyBoard = ({onKeyClick}) => {
+const KeyBoard = ({ onKeyClick }: { onKeyClick: (key: string) => any }) => {
   const keys = [
     "A", "Z", "E", "R", "T", "Y", "U", "I", "O", "P",
     "Q", "S", "D", "F", "G", "H", "J", "K", "L", "M",
@@ -14,11 +14,11 @@ const KeyBoard = ({onKeyClick}) => {
     <div className="keyboard">
       {keys.map((key, index) => {
         return (
-          <KeyBoardKey 
+          <KeyBoardKey
             key={index}
-            kbkey={key} 
+            kbkey={key}
             className={(index === 20 || index === 27) ? 'colspan-2' : ''}
-            onClick={() => {onKeyClick(key)}}
+            onClick={() => { onKeyClick(key) }}
           />
         );
       })}

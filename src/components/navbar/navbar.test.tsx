@@ -1,10 +1,10 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render, screen } from '@testing-library/react';
 import Navbar from "./navbar";
 
 describe("Navbar", () => {
   test("matches snapshot", () => {
-    const wrapper = shallow(<Navbar />);
-    expect(wrapper).toMatchSnapshot();
+    render(<Navbar />);
+   expect(screen).toMatchSnapshot();
   });
 });

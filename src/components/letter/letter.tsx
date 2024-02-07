@@ -1,10 +1,10 @@
 import React from "react";
 import "./letter.css"
 
-const Letter = (props) => {
+const Letter = ({ letter }: { letter: string }) => {
   return <div className="letter">
-      { props.letter }
-      </div>;
+    {letter}
+  </div>;
 };
 
 export default Letter;

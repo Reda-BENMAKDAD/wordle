@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "jsx": "react-jsx",
+      "module": "ESNext"
+    },
+    "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+    
+}
