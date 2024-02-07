@@ -33,19 +33,13 @@ I then coded the game logic word typing, checking if word exists, tries...etc. u
 
 ## Technologies used
 - React
-- Axios
 - Free Dictionary API
 - Node.js
 - Pure css
 
 
 ## Left to do:
-> the interface is implemented and basic game logic is working, but there are still some features to add:
-
-- find a way to generate a random word to guess, since now i try guessing the harcoded word "water" each time.
-- stop game when user guesses right, or after 5 tries.
-
-
+- Animate the message modal
 
 
 
